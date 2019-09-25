@@ -54,12 +54,12 @@ function GUID() {
 
 
         GUID.prototype.formatGUID = function (guidStr) {
-            var str1 = guidStr.slice(0, 8) + '_',
-                str2 = guidStr.slice(8, 12) + '_',
-                str3 = guidStr.slice(12, 16) + '_',
-                str4 = guidStr.slice(16, 20) + '_',
-                str5 = guidStr.slice(20);
-            return str1 + str2 + str3 + str4 + str5;
+            return '__'
+                + guidStr.slice(0, 8) + '_'
+                + guidStr.slice(8, 12) + '_'
+                + guidStr.slice(12, 16) + '_'
+                + guidStr.slice(16, 20) + '_'
+                + guidStr.slice(20);;
         }
     }
 }
